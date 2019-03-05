@@ -1,44 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@font-face {
+  font-family: 'Le Super Serif';
+  src: url('../../assets/Le_Super_Type_SemiBold.ttf') format('truetype');
+}
 body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background: rgba(79, 24, 88, 1);
-  background: -moz-linear-gradient(
-    -45deg,
-    rgba(79, 24, 88, 1) 0%,
-    rgba(7, 1, 45, 1) 25%,
-    rgba(7, 1, 45, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    right bottom,
-    color-stop(0%, rgba(79, 24, 88, 1)),
-    color-stop(25%, rgba(7, 1, 45, 1)),
-    color-stop(100%, rgba(7, 1, 45, 1))
-  );
-  background: -webkit-linear-gradient(
-    -45deg,
-    rgba(79, 24, 88, 1) 0%,
-    rgba(7, 1, 45, 1) 25%,
-    rgba(7, 1, 45, 1) 100%
-  );
-  background: -o-linear-gradient(
-    -45deg,
-    rgba(79, 24, 88, 1) 0%,
-    rgba(7, 1, 45, 1) 25%,
-    rgba(7, 1, 45, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    -45deg,
-    rgba(79, 24, 88, 1) 0%,
-    rgba(7, 1, 45, 1) 25%,
-    rgba(7, 1, 45, 1) 100%
-  );
-  background: linear-gradient(
-    135deg,
-    rgba(79, 24, 88, 1) 0%,
-    rgba(7, 1, 45, 1) 25%,
-    rgba(7, 1, 45, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(   startColorstr='#4f1858', endColorstr='#07012d', GradientType=1 );
+  background-color: #0c0032;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  /*font-family: 'Le Super Serif';*/
+  font-family: 'Pacifico';
+  font-size: 5em;
+  color: #3500d3;
+}
+
+.color {
+  width: 200px;
+  height: 200px;
+}
+
+.color-1 {
+  background-color: #190061;
+}
+
+.color-2 {
+  background-color: #240090;
+}
+
+.color-3 {
+  background-color: #3500d3;
+}
+
+.color-4 {
+  background-color: #282828;
+}
+
+.color-5 {
+  background-color: #ffffff;
 }
