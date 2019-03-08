@@ -9,6 +9,7 @@ export default function Head(props) {
         href="https://fonts.googleapis.com/css?family=Lobster"
         rel="stylesheet"
       />
+      <link href="/static/normalize.css" rel="stylesheet" />
     </NextHead>
   );
 }
