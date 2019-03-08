@@ -1,12 +1,14 @@
 import React from 'react';
 import Title from '../components/Title';
 import Head from '../components/Head';
+import About from '../components/About';
 
 export default function Home(props) {
   return (
     <div className="Home">
       <Head />
       <Title />
+      <About />
       <style jsx global>
         {`
           body {
@@ -22,9 +24,9 @@ export default function Home(props) {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             box-sizing: border-box;
             width: 100%;
-            height: 100vh;
             background-position: center 10%;
             background-repeat: no-repeat;
           }
