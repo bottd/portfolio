@@ -6,7 +6,7 @@ export default function Head(props) {
     <NextHead>
       <title>Drake</title>
       <link
-        href="https://fonts.googleapis.com/css?family=Lobster"
+        href="https://fonts.googleapis.com/css?family=Roboto"
         rel="stylesheet"
       />
       <link href="/static/normalize.css" rel="stylesheet" />
