@@ -6,13 +6,11 @@ export default function Title(props) {
       <div className="Title-container">
         <h1 className="Title-name">Drake Bott</h1>
         <hr />
-        <h2 className="Title-tagline">Software Developer</h2>
+        <h2 className="Title-tagline">Web developer in Denver, CO</h2>
       </div>
       <style jsx>
         {`
           .Title {
-            /*animation: 3s background-slide;*/
-            background-image: url("/static/orange.jpg")
             box-sizing: border-box;
             width: 100%;
             height: 100vh;
@@ -22,28 +20,30 @@ export default function Title(props) {
           }
 
           .Title-container {
-            font-family: 'Lobster', cursive;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
             display: flex;
             flex-direction: column;
-            color: #f49032;
+            color: #fff0db;
             margin: 0;
-            margin-top: 21vh;
+            margin-top: 26vh;
             text-align: center;
             width: 50%;
           }
 
           hr {
-            width: 70%;
+            width: 60%;
+            margin: 0 auto;
           }
 
           .Title-name {
-            font-size: 8em;
-            margin: 0;
+            font-size: 6em;
+            margin-bottom: 1vh;
           }
 
           .Title-tagline {
-            font-size: 4em;
-            margin: 0;
+            font-size: 2em;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 1vh;
           }
         `}
       </style>
