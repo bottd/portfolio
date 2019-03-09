@@ -8,7 +8,6 @@ export default function Home(props) {
     <div className="Home">
       <Head />
       <Title />
-      <About />
       <style jsx global>
         {`
           body {
