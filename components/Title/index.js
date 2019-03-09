@@ -42,7 +42,6 @@ export default function Title(props) {
 
           .Title-tagline {
             font-size: 2em;
-            font-family: 'Roboto', sans-serif;
             margin-top: 1vh;
           }
         `}
