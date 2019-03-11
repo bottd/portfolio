@@ -23,9 +23,9 @@ export default function Title(props) {
             font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
             display: flex;
             flex-direction: column;
-            color: #fff0db;
+            color: #fff;
             margin: 0;
-            margin-top: 26vh;
+            margin-top: 22vh;
             text-align: center;
             width: 50%;
           }
