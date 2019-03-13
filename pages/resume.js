@@ -1,13 +1,11 @@
 import React from 'react';
-import Head from '../components/Head';
+import Layout from '../components/Layout';
 
 export default function Resume(props) {
   return (
-    <div className="Resume">
+    <Layout className="Resume" title="Drake: Resume">
       <Head />
-      <style jsx global>
-        {``}
-      </style>
-    </div>
+      <style jsx>{``}</style>
+    </Layout>
   );
 }

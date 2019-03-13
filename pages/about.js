@@ -1,22 +1,23 @@
 import React from 'react';
-import Head from '../components/Head';
+import Layout from '../components/Layout';
 
 export default function(props) {
   return (
-    <div
-      className="About"
-      style={{ backgroundImage: `url("/static/orange.jpg")` }}>
-      <Head />
+    <Layout className="About" title="Drake: About">
+      <div
+        className="orange-background"
+        style={{ backgroundImage: `url("/static/orange.jpg")` }}
+      />
       <style jsx>{`
-        .About {
+        .orange-background {
           box-sizing: border-box;
           width: 100%;
           height: 100vh;
-          background-position: center;
+          background-position: center 10%;
           background-repeat: no-repeat;
           background-size: cover;
         }
       `}</style>
-    </div>
+    </Layout>
   );
 }

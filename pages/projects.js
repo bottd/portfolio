@@ -1,15 +1,10 @@
 import React from 'react';
-import Head from '../components/Head';
-import About from '../components/About';
+import Layout from '../components/Layout';
 
 export default function Projects(props) {
   return (
-    <div className="Projects">
-      <Head />
-      <About />
-      <style jsx>
-        {``}
-      </style>
-    </div>
+    <Layout className="Projects" title="Drake: Projects">
+      <style jsx>{``}</style>
+    </Layout>
   );
 }
