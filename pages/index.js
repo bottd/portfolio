@@ -1,11 +1,10 @@
 import React from 'react';
+import Layout from '../components/Layout';
 import Title from '../components/Title';
-import Head from '../components/Head';
 
 export default function Home(props) {
   return (
-    <div className="Home">
-      <Head />
+    <Layout className="Home" title="Drake">
       <Title />
       <style jsx>
         {`
@@ -21,6 +20,6 @@ export default function Home(props) {
           }
         `}
       </style>
-    </div>
+    </Layout>
   );
 }
