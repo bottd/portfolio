@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Layout from '../components/Layout';
 import Title from '../components/Title';
 
 export default function Home(props) {
+  let aboutRef = useRef();
+
   return (
     <Layout className="Home" title="Drake">
-      <Title />
+      <Title scrollRef={aboutRef} />
+      <div ref={aboutRef} className="about" />
       <style jsx>
         {`
           .Home {
@@ -17,6 +20,11 @@ export default function Home(props) {
             width: 100%;
             background-position: center 10%;
             background-repeat: no-repeat;
+          }
+          .about {
+            background-color: #fff;
+            width: 100%;
+            height: 100vh;
           }
         `}
       </style>
