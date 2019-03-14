@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Nav(props) {
+export default function Social(props) {
   return (
-    <div className="Nav">
+    <div className="Social">
       <a href="https://github.com/bottd/">
         <i class="fab fa-github" />
       </a>
