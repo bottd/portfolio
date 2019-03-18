@@ -8,7 +8,12 @@ export default function Home(props) {
   return (
     <Layout className="Home" title="Drake">
       <Title scrollRef={aboutRef} />
-      <div ref={aboutRef} className="about" />
+      <div ref={aboutRef} className="about" >
+        <h1>About</h1>
+        <p>
+
+        </p>
+      </div>
       <style jsx>
         {`
           .Home {
@@ -24,7 +29,7 @@ export default function Home(props) {
           .about {
             background-color: #fff;
             width: 100%;
-            height: 100vh;
+            height: 90vh;
           }
         `}
       </style>
