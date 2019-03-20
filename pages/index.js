@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Layout from '../components/Layout';
 import Title from '../components/Title';
+import About from '../components/About';
 
 export default function Home(props) {
   let aboutRef = useRef();
@@ -9,10 +10,7 @@ export default function Home(props) {
     <Layout className="Home" title="Drake">
       <Title scrollRef={aboutRef} />
       <div ref={aboutRef} className="about" >
-        <h1>About</h1>
-        <p>
-
-        </p>
+        <About/>
       </div>
       <style jsx>
         {`
