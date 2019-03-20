@@ -1,5 +1,4 @@
 import React from 'react';
-import Social from '../Social';
 
 export default function Title({ scrollRef }) {
   function scrollToRef() {
@@ -9,7 +8,7 @@ export default function Title({ scrollRef }) {
   return (
     <div
       className="Title"
-      style={{ backgroundImage: `url("/static/orange.jpg")` }}>
+      style={{ backgroundImage: `url("/static/images/orange.jpg")` }}>
       <div className="social-container">
         <a href="https://github.com/bottd/">
           <i class="fab fa-github" />
@@ -74,17 +73,29 @@ export default function Title({ scrollRef }) {
           hr {
             color: #fff;
             width: 31em;
+            opacity: 0;
             margin: 0 auto;
+            animation-name: line-animation;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
           }
 
           .Title-name {
             font-size: 6em;
             margin-bottom: 1vh;
+            animation-name: fade-in;
+            animation-duration: 2s;
+            animation-timing-function: linear;
           }
 
           .Title-tagline {
             font-size: 2em;
             margin-top: 1vh;
+            animation-name: fade-in;
+            animation-duration: 2s;
+            animation-timing-function: linear;
           }
 
           .btn-container {
@@ -106,6 +117,26 @@ export default function Title({ scrollRef }) {
 
           .Title-scroll:focus {
             outline: 0;
+          }
+
+          @keyframes fade-in {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+
+          @keyframes line-animation {
+            from {
+              opacity: 1;
+              width: 0px;
+            }
+            to {
+              opacity: 1;
+              width: 31em;
+            }
           }
         `}
       </style>
