@@ -11,13 +11,13 @@ export default function Title({ scrollRef }) {
       style={{ backgroundImage: `url("/static/images/orange.jpg")` }}>
       <div className="social-container">
         <a href="https://github.com/bottd/">
-          <i class="fab fa-github" />
+          <i className="fab fa-github" />
         </a>
         <a href="https://www.linkedin.com/in/bottd/">
-          <i class="fab fa-linkedin" />
+          <i className="fab fa-linkedin" />
         </a>
         <a href="mailto:drake@drake.dev">
-          <i class="fas fa-envelope" />
+          <i className="fas fa-envelope" />
         </a>
       </div>
       <div className="Title-container">
@@ -27,7 +27,7 @@ export default function Title({ scrollRef }) {
       </div>
       <div className="btn-container">
         <button className="Title-scroll" onClick={scrollToRef}>
-          <i class="fas fa-chevron-down" />
+          <i className="fas fa-chevron-down" />
         </button>
       </div>
       <style jsx>

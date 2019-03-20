@@ -4,13 +4,13 @@ export default function Footer(props) {
   return (
     <div className="Footer">
       <a href="https://github.com/bottd/">
-        <i class="fab fa-github" />
+        <i className="fab fa-github" />
       </a>
       <a href="https://www.linkedin.com/in/bottd/">
-        <i class="fab fa-linkedin" />
+        <i className="fab fa-linkedin" />
       </a>
       <a href="mailto:drake@drake.dev">
-        <i class="fas fa-envelope" />
+        <i className="fas fa-envelope" />
       </a>
       <style jsx>
         {`
