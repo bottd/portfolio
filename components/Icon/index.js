@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Icon({ title, url }) {
+export default function Icon({ title, url, link }) {
   return (
     <div className="Icon" style={{ backgroundImage: `url(${url})` }}>
-      <a className="Icon-label">
+      <a className="Icon-label" href={link} target="_blank">
         <div className="Icon-text">{title}</div>
       </a>
       <style jsx>
