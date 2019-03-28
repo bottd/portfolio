@@ -7,7 +7,6 @@ export default function About(props) {
   ));
   return (
     <div className="About">
-      <h1>about</h1>
       <div className="About-icons">{displayIcons}</div>
       <style jsx>
         {`
@@ -36,6 +35,10 @@ const icons = [
   {
     title: 'Docker',
     url: '/static/images/docker.svg',
+  },
+  {
+    title: 'Discord',
+    url: '/static/images/discord.svg',
   },
   {
     title: 'Git',
