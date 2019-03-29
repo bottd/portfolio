@@ -13,9 +13,10 @@ export default function Icon({ title, url, link }) {
             background-image: none;
             background-size: auto;
             background-size: contain;
-            height: 8em;
+            height: 9em;
+            margin: 0;
             position: relative;
-            width: 8em;
+            width: 9em;
           }
           .Icon-label {
             align-items: center;
