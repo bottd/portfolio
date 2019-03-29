@@ -16,7 +16,6 @@ export default function Navigation(props) {
           align-items: center;
           background-color: #353535;
           display: flex;
-          margin: 0;
           position: fixed;
           height: 8vh;
           width: 100%;
@@ -24,6 +23,7 @@ export default function Navigation(props) {
           transition: top 1s linear;
         }
         a {
+          border-bottom: 2px solid transparent;
           color: #fff;
           font-size: 1.5em;
           margin-left: 2.5%;
@@ -33,9 +33,8 @@ export default function Navigation(props) {
         a:visited {
           color: #fff;
         }
-        a::hover {
-          background-color: red;
-          border-bottom: 10px solid #fff;
+        a:hover {
+          border-bottom: 2px solid #fff;
         }
         `}
       </style>
