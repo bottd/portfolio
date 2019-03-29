@@ -23,7 +23,8 @@ export default function Navigation(props) {
           position: fixed;
           height: 8vh;
           width: 100%;
-          z-index: -1;
+          z-index: 100;
+          transition: top 1s linear;
         }
         a {
           color: #fff;
