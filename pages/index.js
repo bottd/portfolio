@@ -7,7 +7,6 @@ export default function Home(props) {
   let aboutRef = useRef();
   useEffect(() => {
     const nav = document.querySelector('.Navigation');
-    nav.style.top = '-500px';
     function toggleNav(event) {
       if (event.pageY === 0) {
         nav.style.top = '-500px';
