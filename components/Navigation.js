@@ -10,8 +10,8 @@ export default function Navigation(props) {
       <Link href="/projects">
         <a>Projects</a>
       </Link>
-      <Link href="/contact">
-        <a>Contact</a>
+      <Link href="/resume">
+        <a>Resume</a>
       </Link>
       <style jsx>
         {`
