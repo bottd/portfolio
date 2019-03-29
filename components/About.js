@@ -18,7 +18,6 @@ export default function About(props) {
           </Link>{' '}
           and a list of some tools I've used as well.
         </p>
-        <p>-Drake</p>
       </div>
       <div className="About-icons">{displayIcons}</div>
       <style jsx>
