@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Icon from '../Icon';
 
 export default function About(props) {
@@ -7,15 +8,46 @@ export default function About(props) {
   ));
   return (
     <div className="About">
+      <div className="About-text">
+        <p className="About-description">
+          I am a web developer with a life long love for working with computers.
+          I love learning about new ways to use tools I know, and am always
+          eager to learn new technologies. Take a look at some of{' '}
+          <Link href="/projects">
+            <a>my work</a>
+          </Link>{' '}
+          and a list of some tools I've used as well.
+        </p>
+        <p>-Drake</p>
+      </div>
       <div className="About-icons">{displayIcons}</div>
       <style jsx>
         {`
           .About {
+            display: grid;
+            grid-template-columns: 40% 60%;
             height: 90vh;
             width: 100%;
           }
+
+          .About-text {
+            align-self: center;
+            color: #353535;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+              Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+            font-size: 2em;
+            padding: 1em;
+          }
+
+          .About-description {
+            text-indent: 1em;
+          }
+
           .About-icons {
+            align-self: center;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
           }
         `}
       </style>
@@ -103,5 +135,10 @@ const icons = [
     title: 'Vim',
     url: '/static/images/vim.svg',
     link: 'https://www.vim.org/',
+  },
+  {
+    title: 'Next.js',
+    url: '/static/images/nextjs.svg',
+    link: 'https://nextjs.org/',
   },
 ];
