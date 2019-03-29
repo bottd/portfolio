@@ -104,7 +104,7 @@ export default function Title({ scrollRef }) {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            top: 95vh;
+            bottom: 0;
             width: 100%;
           }
 
