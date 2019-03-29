@@ -23,7 +23,7 @@ export default function Title({ scrollRef }) {
       <div className="Title-container">
         <h1 className="Title-name">Drake Bott</h1>
         <hr />
-        <h2 className="Title-tagline">Web developer in Denver, CO</h2>
+        <h2 className="Title-tagline">Web developer</h2>
       </div>
       <div className="btn-container">
         <button className="Title-scroll" onClick={scrollToRef}>
