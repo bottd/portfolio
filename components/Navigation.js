@@ -33,6 +33,10 @@ export default function Navigation(props) {
         a:visited {
           color: #fff;
         }
+        a::hover {
+          background-color: red;
+          border-bottom: 10px solid #fff;
+        }
         `}
       </style>
     </nav>
