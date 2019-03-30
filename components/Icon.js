@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Icon({ title, url, link }) {
+export default function Icon({ title, url, link, size = 9 }) {
   return (
     <div className="Icon" style={{ backgroundImage: `url(${url})` }}>
       <a className="Icon-label" href={link} target="_blank">
@@ -13,10 +13,10 @@ export default function Icon({ title, url, link }) {
             background-image: none;
             background-size: auto;
             background-size: contain;
-            height: 9em;
+            height: ${size}em;
             margin: 0;
             position: relative;
-            width: 9em;
+            width: ${size}em;
           }
           .Icon-label {
             align-items: center;
