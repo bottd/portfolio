@@ -1,7 +1,13 @@
 import React from 'react';
 import Icon from './Icon';
 
-export default function Project({ name, description, image, iconInfo }) {
+export default function Project({
+  name,
+  description,
+  image,
+  iconInfo,
+  screenshot,
+}) {
   const icons = iconInfo.map(icon => <Icon {...icon} size={3} />);
   return (
     <div className="Project">
@@ -14,6 +20,10 @@ export default function Project({ name, description, image, iconInfo }) {
       </div>
       <p className="Project-description">{description}</p>
       <div className="Project-icons">{icons}</div>
+      <div
+        className="Project-screenshot"
+        style={{ backgroundImage: `url(${screenshot})` }}
+      />
       <style jsx>
         {`
           .Project {
@@ -57,6 +67,15 @@ export default function Project({ name, description, image, iconInfo }) {
             justify-content: center;
             bottom: 2px;
             width: 100%;
+          }
+          .Project-screenshot {
+            background: no-repeat 51%;
+            background-image: none;
+            background-size: auto;
+            background-size: contain;
+            margin: auto;
+            width: 80%;
+            height: 40%;
           }
         `}
       </style>

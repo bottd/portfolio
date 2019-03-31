@@ -38,6 +38,7 @@ const projectInfo = [
         link: 'https://github.com/bottd/spont-be',
       },
     ],
+    screenshot: '/static/images/spont-screenshot.png',
   },
   {
     name: 'HOWL Bot',
@@ -50,6 +51,7 @@ const projectInfo = [
         link: 'https://github.com/bottd/howl-bot',
       },
     ],
+    screenshot: '/static/images/howl-screenshot.png',
   },
   {
     name: 'Movie Tracker',
@@ -63,5 +65,6 @@ const projectInfo = [
         link: 'https://github.com/bottd/movie-tracker',
       },
     ],
+    screenshot: '/static/images/movie-tracker-screenshot.png',
   },
 ];
