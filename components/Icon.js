@@ -35,7 +35,7 @@ export default function Icon({ title, url, link, size = 9 }) {
           }
           .Icon-text {
             color: #fff;
-            font-size: 1.5em;
+            font-size: ${size/4 > 1 ? size/4 : 1}em;
             text-align: center;
             width: 100%;
           }
