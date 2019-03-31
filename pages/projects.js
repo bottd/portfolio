@@ -6,8 +6,17 @@ export default function Projects(props) {
   const projects = projectInfo.map(project => <Project {...project} />);
   return (
     <Layout className="Projects" title="Drake: Projects">
-      {projects}
-      <style jsx>{``}</style>
+      <div className="Projects-container">{projects}</div>
+      <style jsx global>{`
+        .Projects-container {
+          justify-content: center;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 9vh 0;
+          width: 100%;
+          height: 72vh;
+        }
+      `}</style>
     </Layout>
   );
 }
