@@ -10,6 +10,17 @@ export default function Navigation(props) {
       <Link href="/projects">
         <a>Projects</a>
       </Link>
+      <div className="Navigation-social">
+        <a href="https://github.com/bottd/">
+          <i className="fab fa-github" />
+        </a>
+        <a href="https://www.linkedin.com/in/bottd/">
+          <i className="fab fa-linkedin" />
+        </a>
+        <a href="mailto:drake@drake.dev">
+          <i className="fas fa-envelope" />
+        </a>
+      </div>
       <style jsx global>
         {`
           .Navigation {
@@ -20,7 +31,7 @@ export default function Navigation(props) {
             height: 8vh;
             width: 100%;
             top: 0;
-            transition: top 1s linear;
+            transition: background-color 1s linear;
             z-index: 100;
           }
           .Navigation a {
@@ -36,6 +47,20 @@ export default function Navigation(props) {
           }
           .Navigation a:hover {
             border-bottom: 2px solid #fff;
+          }
+          .Navigation-social {
+            align-items: center;
+            background-color: transparent;
+            display: flex;
+            font-size: 2em;
+            position: absolute;
+            justify-content: flex-end;
+            top: 0;
+            width: 100%;
+            height: 100%;
+          }
+          .fab, .fas {
+            font-size: .75em;
           }
         `}
       </style>
