@@ -14,7 +14,6 @@ export default function Projects(props) {
           flex-wrap: wrap;
           margin: 9vh 0;
           width: 100%;
-          height: 72vh;
         }
       `}</style>
     </Layout>
@@ -66,5 +65,32 @@ const projectInfo = [
       },
     ],
     screenshot: '/static/images/movie-tracker-screenshot.png',
+  },
+  {
+    name: 'SWAPI Box',
+    description: `Utilizing the StarWars API, SWAPI-box is a single page application that allows its users to explore the rich world of StarWars, as well as bookmark their favorite characters, planets, and vehicles.  This project utilizes ReactJS, Router, and has been fully tested with Enzyme/Jest.`,
+    image: '/static/images/swapibox.png',
+    iconInfo: [
+      {
+        title: 'Repo',
+        url: '/static/images/github.svg',
+        link: 'https://github.com/bottd/SWAPI-Box',
+      },
+    ],
+    screenshot: '/static/images/swapibox-screenshot.png',
+  },
+  {
+    name: 'PR Tracker',
+    description:
+      'PR Tracker uses Express to serve up a React app that sends requests to the GitHub API to retrieve and display all open pull requests on the given repository.',
+    image: '/static/images/github.svg',
+    iconInfo: [
+      {
+        title: 'Repo',
+        url: '/static/images/github.svg',
+        link: 'https://github.com/bottd/pr-tracker',
+      },
+    ],
+    screenshot: '/static/images/pr-tracker-screenshot.png',
   },
 ];
