@@ -8,10 +8,13 @@ export default function Home(props) {
   useEffect(() => {
     const nav = document.querySelector('.Navigation');
     function toggleNav(event) {
+      console.log(nav.style);
       if (event.pageY === 0) {
-        nav.style.top = '-500px';
+        nav.style.borderBottom = '1px solid #fff';
+        nav.style.backgroundColor= 'transparent';
       } else {
-        nav.style.top = '0px';
+        nav.style.borderBottom = 'none';
+        nav.style.backgroundColor = '#353535';
       }
     }
     document.addEventListener('scroll', toggleNav);
@@ -35,7 +38,8 @@ export default function Home(props) {
             background-repeat: no-repeat;
           }
           .Navigation {
-            top: -500px;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
           }
         `}
       </style>
