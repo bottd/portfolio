@@ -32,8 +32,9 @@ export default function Project({
             color: #353535;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
               Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-            margin: 0 1% 0 1%;
+            margin: 1% 1% 0 1%;
             position: relative;
+            height: 80vh;
             width: 27%;
           }
           .Project-header {
