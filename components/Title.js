@@ -9,17 +9,6 @@ export default function Title({ scrollRef }) {
     <div
       className="Title"
       style={{ backgroundImage: `url("/static/images/orange.jpg")` }}>
-      <div className="social-container">
-        <a href="https://github.com/bottd/">
-          <i className="fab fa-github" />
-        </a>
-        <a href="https://www.linkedin.com/in/bottd/">
-          <i className="fab fa-linkedin" />
-        </a>
-        <a href="mailto:drake@drake.dev">
-          <i className="fas fa-envelope" />
-        </a>
-      </div>
       <div className="Title-container">
         <h1 className="Title-name">Drake Bott</h1>
         <hr />
@@ -42,23 +31,10 @@ export default function Title({ scrollRef }) {
             background-repeat: no-repeat;
             background-size: cover;
           }
-
-          .social-container {
-            align-items: center;
-            background-color: transparent;
-            display: flex;
-            font-size: 2em;
-            position: absolute;
-            justify-content: flex-end;
-            top: 0;
-            width: 100%;
-            height: 6vh;
-          }
           a {
             margin: 0 1% 0 1%;
             color: #fff;
           }
-
           .Title-container {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
               Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
@@ -69,7 +45,6 @@ export default function Title({ scrollRef }) {
             top: 22vh;
             width: 50%;
           }
-
           hr {
             color: #fff;
             width: 31em;
@@ -81,7 +56,6 @@ export default function Title({ scrollRef }) {
             animation-fill-mode: forwards;
             animation-timing-function: linear;
           }
-
           .Title-name {
             font-size: 6em;
             margin-bottom: 1vh;
@@ -89,7 +63,6 @@ export default function Title({ scrollRef }) {
             animation-duration: 2s;
             animation-timing-function: linear;
           }
-
           .Title-tagline {
             font-size: 2em;
             margin-top: 1vh;
@@ -97,7 +70,6 @@ export default function Title({ scrollRef }) {
             animation-duration: 2s;
             animation-timing-function: linear;
           }
-
           .btn-container {
             position: absolute;
             display: flex;
@@ -107,18 +79,15 @@ export default function Title({ scrollRef }) {
             bottom: 0;
             width: 100%;
           }
-
           .Title-scroll {
             background: none;
             border: none;
             color: #fff;
             font-size: 3em;
           }
-
           .Title-scroll:focus {
             outline: 0;
           }
-
           @keyframes fade-in {
             from {
               opacity: 0;
@@ -127,7 +96,6 @@ export default function Title({ scrollRef }) {
               opacity: 1;
             }
           }
-
           @keyframes line-animation {
             from {
               opacity: 1;
