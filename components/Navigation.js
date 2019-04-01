@@ -56,7 +56,8 @@ export default function Navigation(props) {
             position: absolute;
             justify-content: flex-end;
             top: 0;
-            width: 100%;
+            right: 2%;
+            width: 20%;
             height: 100%;
           }
           .fab, .fas {
