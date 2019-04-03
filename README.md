@@ -1,1 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal Portfolio Site
+This site runs on Next.js.  Next.js is a React based framework that helps with static page generation and SEO.
+
