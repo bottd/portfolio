@@ -101,6 +101,11 @@ const icons = [
     link: 'https://jestjs.io/',
   },
   {
+    title: 'jQuery',
+    url: '/static/images/jquery.svg',
+    link: 'https://jquery.com/',
+  },
+  {
     title: 'Mocha',
     url: '/static/images/mocha.svg',
     link: 'https://mochajs.org/',
