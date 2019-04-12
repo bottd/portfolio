@@ -78,6 +78,37 @@ export default function Project({
             width: 80%;
             height: 40%;
           }
+          @media screen and (max-width: 1024px) {
+            .Project {
+              width: 43%;
+            }
+            .Project-description {
+              font-size: 1.5em;
+            }
+            .Project-screenshot {
+              height: 30%;
+            }
+          }
+          @media screen and (max-width: 450px) {
+            .Project {
+              width: 87%;
+              height: 90vh;
+            }
+            .Project-description {
+              font-size: 1em;
+            }
+            .Project-screenshot {
+              height: 40%;
+            }
+          }
+          @media screen and (max-width: 350px) {
+            .Project {
+              height : 100vh;
+            }
+            .Project-screenshot {
+              height: 35%;
+            }
+          }
         `}
       </style>
     </div>
