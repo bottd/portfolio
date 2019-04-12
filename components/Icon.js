@@ -30,12 +30,12 @@ export default function Icon({ title, url, link, size = 9 }) {
           }
           .Icon-label:hover {
             background-color: #666666;
-            opacity: 0.8;
+            opacity: 0.85;
             transition: opacity 0.5s;
           }
           .Icon-text {
             color: #fff;
-            font-size: ${size/4 > 1 ? size/4 : 1}em;
+            font-size: ${size/4.5 > 1 ? size/4.5 : 1}em;
             text-align: center;
             width: 100%;
           }

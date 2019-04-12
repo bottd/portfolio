@@ -121,7 +121,7 @@ const icons = [
     link: 'https://www.npmjs.com/',
   },
   {
-    title: 'PostgreSQL',
+    title: 'Postgres',
     url: '/static/images/postgresql.svg',
     link: 'https://www.postgresql.org/',
   },
